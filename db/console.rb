@@ -12,11 +12,21 @@ artist1.save()
 
 artist2 = Artist.new(
   {
-    'name' => 'A Flock Of Seagulls '
+    'name' => "A Flock Of Seagulls"
   }
 )
 
 artist2.save()
+
+album1 = Album.new(
+  {
+    'title' => "Ceremonials",
+    'genre' => "Indie rock",
+    'artist_id' => artist1.id
+  }
+)
+
+album1.save()
 
 binding.pry
 nil
