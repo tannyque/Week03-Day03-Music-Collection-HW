@@ -12,7 +12,7 @@ artist1.save()
 
 artist2 = Artist.new(
   {
-    'name' => "A Flock Of Seagulls"
+    'name' => "Lana Del Rey"
   }
 )
 
@@ -27,6 +27,16 @@ album1 = Album.new(
 )
 
 album1.save()
+
+album2 = Album.new(
+  {
+    'title' => "Born to Die",
+    'genre' => "Indie pop",
+    'artist_id' => artist2.id
+  }
+)
+
+album2.save()
 
 binding.pry
 nil
