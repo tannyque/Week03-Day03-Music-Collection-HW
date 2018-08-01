@@ -10,5 +10,13 @@ artist1 = Artist.new(
 
 artist1.save()
 
+artist2 = Artist.new(
+  {
+    'name' => 'A Flock Of Seagulls '
+  }
+)
+
+artist2.save()
+
 binding.pry
 nil
